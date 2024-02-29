@@ -1,67 +1,55 @@
 body {
-    background-color: rgb(0, 0, 33);
-    color: white;
-    font-family: 'poppins', sans-serif;
-
+    background-color: rgb(0, 0, 31);
+    color: #ccc; /* Adjusted text color for better contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #fff; /* Set h1 font color to white */
+}
+
+.software-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .software-item {
-    margin-bottom: 20px;
+    background-color: #0a0a4d; /* Darker shade of the background color */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(250, 250, 250, 0.788);
+    transition: box-shadow 0.3s ease;
 }
 
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.software-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.software-link {
+    text-decoration: none;
+    color: #ccc; /* Adjusted link color for better contrast */
+}
+
+.software-name {
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+    color: #ccc; /* Adjusted software name color for better contrast */
 }
 
 img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-}
-/* #vscode {
-    width: 30px; /* Adjust the width as needed */
-    /*height: auto; /* Maintain aspect ratio }*/
-    .software-item {
-        margin-bottom: 20px;
-    }
-    
-    .software-content {
-        display: flex; /* Use flexbox for layout */
-        align-items: center; /* Center items vertically */
-    }
-    
-    #vscode {
-        max-width: 50px; /* Set maximum width for the image */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 20px; /* Add some space between the image and the text */
-    }
-    
-    .software-name {
-        font-size: 30px; /* Adjust font size as needed */
-        color: white; /* Set text color */
-        text-decoration: none; /* Remove underline */
-    }
-    
-    .software-link {
-        text-decoration: none; /* Remove underline */
-        color: inherit; /* Inherit text color */
-    }
-
-#Pycharm{
-    max-width: 50px; /* Set maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px
-}
-#IntelliJ_IDEA_Ultimate{
-    max-width: 50px; /* Set maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px
-}
-h1{
-    text-align: center;
 }
