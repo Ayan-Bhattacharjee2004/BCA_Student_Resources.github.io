@@ -52,4 +52,16 @@ a {
         color: inherit; /* Inherit text color */
     }
 
-
+#Pycharm{
+    max-width: 50px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px
+}
+#IntelliJ_IDEA_Ultimate{
+    max-width: 50px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px
+}
+h1{
+    text-align: center;
+}
