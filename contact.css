@@ -1,0 +1,50 @@
+/* contact.css */
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.container {
+    max-width: 600px; /* Set maximum width for better readability */
+    margin: auto; /* Center the container horizontally */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 30px; /* Add some space below the paragraph */
+}
+
+.email-link {
+    color: #66ccff; /* Change link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+img {
+    display: block; /* Make the image a block element to control its positioning */
+    margin: auto; /* Center the image horizontally */
+    max-width: 100%; /* Make sure the image doesn't exceed its container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-top: 30px; /* Add some space above the image */
+    border-radius: 10px; /* Add a rounded border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Scale the image up slightly on hover */
+}
