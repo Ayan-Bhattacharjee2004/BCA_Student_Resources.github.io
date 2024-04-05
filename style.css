@@ -65,3 +65,103 @@ nav ul li a:hover{
 .purple{
     color: blueviolet;
 }
+/* Adding aimation on the text*/
+/* Define the slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* Define the glow animation */
+/* Define the slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* Define the glow animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px blueviolet;
+    }
+    50% {
+        text-shadow: 0 0 20px blueviolet;
+    }
+    100% {
+        text-shadow: 0 0 10px blueviolet;
+    }
+}
+
+/* Define the typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Apply all animations to the text */
+.leftsection {
+    animation: slideIn 1s ease-in-out forwards,
+               glow 2s infinite alternate,
+               typing 4s infinite;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: .15em solid white; /* Simulate cursor */
+}
+    /*responsive part */
+
+    @media only screen and (max-width: 600px) {
+        .first {
+            flex-direction: column;
+            margin: 20px;
+        }
+        .first > div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .rightsecation img {
+            width: 100%;
+        }
+        .leftsection {
+            font-size: 2rem;
+        }
+    }
+/*for nav bar*/    
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .right {
+        display: none; /* Hide the right-side menu */
+    }
+    .left {
+        margin-bottom: 10px; /* Add some space between the logo and the menu */
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0; /* Add padding to the menu items */
+    }
+    nav ul li {
+        margin: 5px 0; /* Add space between menu items */
+    }
+}
+ 
+
